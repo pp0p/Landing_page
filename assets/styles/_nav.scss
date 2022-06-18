@@ -1,0 +1,45 @@
+nav {
+  @include flexbox(space-between, center, row);
+  padding: 10px;
+  transition: 0.4s;
+  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.04);
+  background-color: #ffffff;
+  color: #ffffff;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  .logo {
+    a {
+      font-weight: bold;
+      color: #191a20;
+      text-decoration: none;
+      font-size: 1.3rem;
+      color: #191a20;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  .menu_btn {
+    cursor: pointer;
+    font-size: 1.9rem;
+    display: none;
+  }
+  .menu {
+    .close_btn {
+      display: none;
+    }
+    a {
+      color: #304352;
+      font-size: 1.1rem;
+      text-decoration: none;
+      margin: 0 10px;
+      transition: 0.3s;
+      &:hover {
+        color: #fba70b;
+      }
+    }
+  }
+}
+
+// For phone screen

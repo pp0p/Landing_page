@@ -1,0 +1,14 @@
+@mixin change_background($img_path) {
+    background-image: url($img_path);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  @mixin flexbox($justify, $align, $direction) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+  }
+  

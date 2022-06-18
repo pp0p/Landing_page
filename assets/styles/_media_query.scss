@@ -1,0 +1,101 @@
+@import "nav";
+@media screen and (min-width: 0px) and (max-width: 800px) {
+  header .header_section {
+    @include flexbox(space-between, center, column-reverse);
+    .info {
+      margin-top: 40px;
+      margin-left: 0;
+      width: 100%;
+    }
+    .header_bg{
+      height: 100%;
+    }
+  }
+  header nav {
+    .menu .close_btn {
+      cursor: pointer;
+      left: 10px;
+      position: absolute;
+      top: 0;
+      font-size: 1.9rem;
+      color: #3c3c42;
+      display: block;
+    }
+    .menu_btn {
+      color: #1e1e1e;
+      display: block;
+    }
+    .menu {
+      @include flexbox(center, center, column);
+      position: fixed;
+      top: 0;
+      right: 0;
+      transform: translateX(500px);
+      a {
+        border-bottom: 1px solid #eeeeee;
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+        color: #3c3c42;
+      }
+    }
+    .menu_active {
+      height: 100%;
+      transition: 0.3s;
+      background-color: #f7f7f7;
+      transform: translateX(0);
+      width: 70%;
+    }
+  }
+
+  .about_us {
+    .app_img {
+      margin: 30px 10px;
+    }
+    .app_info {
+      margin: 0 40px;
+      width: 100%;
+      margin: 10px 0;
+      font-size: 0.8rem;
+      p {
+        margin: 10px 0;
+      }
+      .feature {
+        flex-direction: column;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+        img {
+          margin: 20px 0;
+          width: 70px;
+          height: 70px;
+        }
+      }
+    }
+  }
+  footer{
+    padding: 10px;
+    height: 100%;
+    flex-direction: column-reverse;
+    .contect_us{
+      margin-top: 20px;
+    }
+    .footer_info{
+      margin: 4px 10px;
+      text-align: center;
+      width: 100%;
+    }
+  }
+.user_rate{
+  .user_info{
+    text-align: center;
+    width: 100%;
+
+    p{
+      margin: auto;
+      margin-top: 10px;
+      width: 80%;
+    }
+  }
+}
+}

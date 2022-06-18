@@ -1,0 +1,7 @@
+header {
+  @include flexbox(center,center,column);
+  @import "nav";
+  @import "header_section";
+}
+
+// active nav class on scroll

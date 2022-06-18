@@ -1,0 +1,30 @@
+.services {
+  margin-top: 50px;
+  @include flexbox(center, center, row);
+  flex-wrap: wrap;
+  .card {
+    @include flexbox(center, center, column);
+    justify-content: space-around;
+    height: 320px;
+    width: 300px;
+    background-color: #ffffff;
+    margin: 10px 20px;
+    padding: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    a {
+      transition: 0.3s;
+      text-decoration: none;
+      font-size: 14px;
+      border-radius: 25px;
+      padding: 15px 25px;
+      background-color: #f4813f;
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 600;
+      letter-spacing: 1px;
+      &:hover {
+        background-color: #f1556a;
+      }
+    }
+  }
+}
